@@ -25,10 +25,11 @@ header nav {
     position: static;
 }
 
-.megamenu .dropdown-menu {
+.megamenu .dropdown-menu.danhmuc {
     background: none;
     border: none;
     width: 100%;
+    
 }
 
 code {
@@ -40,6 +41,64 @@ code {
 
 .text-uppercase {
     letter-spacing: 0.08em;
+}
+
+/* brands */
+.dropdown-menu.brands {
+    border: none;
+    margin-left: -100px;
+}
+
+.dropdown-menu.brands .card-group{
+    min-width: 580px;
+    padding: 10px;
+}
+.dropdown-menu.brands .card {
+    margin-right: 15px;
+}
+
+.dropdown-menu.brands .card:last-child {
+    margin-right: 0px;
+}
+
+.dropdown-menu.brands .card img{
+    width: 100px;
+    height: 100px;
+   
+}
+/* cart */
+
+
+.shopping-cart .dropdown-menu.cart-dropdown {
+    margin-left: -100px;
+    min-width: 400px; /* Adjust the minimum width as needed */
+    padding: 15px;
+}
+
+.cart-dropdown img {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.cart-item-details p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.total-price {
+    font-weight: bold;
 }
 
 /* MAIN */
