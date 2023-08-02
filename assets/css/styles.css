@@ -6,29 +6,39 @@ body {
     font-weight: 700;
 }
 
+nav{
+    background-color: #311cba;
+}
+
 header .navbar a {
-    color: #272343;
+    color: #311cba;
+    z-index: 999;
 }
 
 header nav {
-    background-color: #fff501;
+    background-color: lightblue;
+    z-index: 999;
 }
 
 .navbar-brand {
     font-size: 23px;
     font-weight: 800;
+    z-index: 999;
 }
 #navbarText a {
     font-size: 15px;
+    z-index: 999;
 }
 .megamenu {
     position: static;
+    z-index: 999;
 }
 
 .megamenu .dropdown-menu {
     background: none;
     border: none;
     width: 100%;
+    z-index: 999;
 }
 
 code {
@@ -36,6 +46,7 @@ code {
     background: #fff;
     padding: 0.1rem 0.2rem;
     border-radius: 0.2rem;
+    z-index: 999;
 }
 
 .text-uppercase {
@@ -48,4 +59,48 @@ main {
     background: #bae8e8;
     background: -webkit-linear-gradient(to right, #bae8e8, #654ea3);
     background: linear-gradient(to top, #bae8e8, #654ea3);
+    .rounded-circle{
+        width: 50px;
+        height: 50px;
+      }
+      .rounded-start{
+        width: 100px;
+        height: 100px;
+      }
+      .card-img-top{
+        width: auto;
+        height: auto;
+      }
+      .title{
+      
+      z-index: 1; 
+      }
+      .center-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      #checkoutt{
+        border: 10px solid transparent;
+        padding: 15px;
+        border-image: url(images/z4369629459976_c6032d84fb9d0dd4116800dfca108b6f.jpg) 30% round;
+        background-image: url(images/xe.jpg), url(images/mo.jpg);
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, repeat;
+      }
+      body {
+        background-color: #fffffe;
+      }
+      button{
+        background-color: #ffd803;
+      }
+    
+}
+#block1{
+    background-color: #aadc6e;
+    height: auto;
+}
+#block2{
+    background-color: #fff2cc;
 }
