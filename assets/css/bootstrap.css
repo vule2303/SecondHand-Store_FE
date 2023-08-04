@@ -7388,6 +7388,7 @@ textarea.form-control-lg {
 
 .text-reset {
   color: inherit !important;
+  text-decoration: none;
 }
 
 .bg-primary {
