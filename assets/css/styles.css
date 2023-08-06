@@ -99,8 +99,13 @@ main {
 }
 #block1{
     background-color: #aadc6e;
+    margin-top: -130px;
+    width: auto;
     height: auto;
 }
 #block2{
     background-color: #fff2cc;
+   
+    width: auto;
+    height: auto;
 }
