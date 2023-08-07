@@ -4,6 +4,7 @@ body {
     background-color: #fffffe;
     font-family: "Manrope", sans-serif;
     font-weight: 700;
+    position: relative;
 }
 
 nav{
@@ -91,10 +92,12 @@ main {
       }
       body {
         background-color: #fffffe;
+        position: relative;
       }
       button{
         background-color: #ffd803;
       }
+      
     
 }
 #block1{
