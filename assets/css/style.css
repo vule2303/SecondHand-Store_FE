@@ -1,3 +1,316 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+}
+
+/* Dropmenu */
+
+code {
+    color: #745eb1;
+    background: #fff;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.text-uppercase {
+    letter-spacing: 0.08em;
+}
+
+/* brands  */
+uk-container .img-cover {
+    width: 100%;
+    height: 100%;
+}
+
+.brand-logo,
+.title-main {
+    font-family: "Manrope", sans-serif;
+    color: black;
+    font-weight: 900;
+}
+
+
+/* MAIN */
+main {
+    height: 734px;
+    background: white;
+    background: -webkit-linear-gradient(to right, #bae8e8);
+    background: linear-gradient(to top, #bae8e8);
+}
+/* CSS cho phần tử và class chung */
+.announ-bar {
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    color: #333;
+    height: 50px; /* Đặt chiều cao cho thanh section */
+  }
+  
+  .content-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+  }
+  
+  .body-text {
+    font-size: 16px;
+    padding-top: 18px;
+  }
+  
+  /* CSS cho liên kết Get Started */
+  .get-started-link {
+    color: black;
+    text-decoration: none;
+    align-items: center;
+  }
+  
+  /* CSS cho biểu tượng mũi tên */
+  .arrow-icon {
+    font-size: 16px;
+  }
+  
+  /* CSS cho nút x đóng */
+  .close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .close-icon {
+    font-size: 20px;
+    color: #333;
+  }
+
+  /* link liên kết giữa men top và tên sản phẩm */
+
+
+
+
+  /* Reset default styles for the list */
+.styles-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* Style for list items */
+.styles-item {
+  margin-right: 5px; /* Add space between items */
+}
+
+/* Style for the spacer between items */
+.styles-spacer {
+  margin: 0 5px; /* Add space before and after the spacer */
+}
+
+/* Style for the link inside list items */
+.styles-item a {
+  text-decoration: underline;
+  color: #000; /* Set link color */
+}
+
+/* Change link color on hover */
+.styles-item a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+
+
+
+/* Phần nội dung   */
+
+
+.flex-box{
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+.left{
+    width: 50%;
+}
+.big-img{
+    width: 90%;
+}
+.big-img img{
+    width: inherit;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    width: 81%;
+    margin-top: 15px;
+}
+.small-img{
+    width: 100px;
+    overflow: hidden;
+    border: 1.5px solid black;
+}
+.small-img img{
+    width: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.small-img:hover img{
+    transform: scale(1.2);
+}
+.url{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+.pname{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.pname2{
+    font-size: 11px;
+    margin: 2px 0;
+    color:rgba(0,0,0,.5);
+}
+.ratings i{
+    color: rgb(255, 136, 0);
+}
+.price{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.size{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.size p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.psize{
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ff5e00;
+    color: #000;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.psize.active{
+    border-width: 1.5px;
+    color: #ff5e00;
+    font-weight: 500;
+}
+.quantity{
+    display: flex;
+}
+.quantity p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.quantity input{
+    width: 40px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 15px;
+}
+.btn-box{
+    display: flex;
+    margin-top: 40px;
+    gap: 10px;                  /* Khoảng cách 10px giữa các phần tử con trong flexbox */
+    justify-content: center;    /* Căn chỉnh các phần tử con ở giữa theo chiều ngang */
+}
+/* .btn-box button{
+    font-size: 20px;
+    padding: 8px 25px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: black;
+}
+.cart-btn{
+    background-color: yellow;
+    margin-right: 20px;
+}
+.buy-btn{
+    background-color: yellow;
+}
+.cart-btn:hover{
+    background-color: yellow;
+}
+.buy-btn:hover{
+    background-color: yellow;
+} */
+.uk-button-custom {
+    background-color:#3da9fc;    /* Màu nền màu vàng */
+    color: white;               /* Màu chữ đen */
+    width: 337px;               /* Chiều rộng là 337px */
+    height: 48px;               /* Chiều cao là 48px */
+    font-size: 16px;            /* Cỡ chữ là 16px (có thể điều chỉnh theo ý muốn) */
+    border: none;              /* Bỏ viền nút */
+    border-radius: 4px ;         /* Bo góc viền của nút */
+    cursor: pointer;           /* Hiển thị biểu tượng con trỏ khi rê chuột vào nút */
+    /* Thêm các thuộc tính CSS khác tùy chỉnh nút (nếu cần) */
+  }
+
+
+/* detail */
+
+.details{
+    margin-top: 25px;
+}
+.details p {
+  color: black;
+
+}
+.detail-text a {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.detail-heading {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.norword {
+    font-weight: normal;
+    line-height: 0.5;
+}
+
+.norword2 {
+    font-weight: normal;
+}
+
+.slidershow{
+    display: flex;
+    width: 1000px;
+    margin: 20px auto;
+}
+.text {
+    width: 1000px;
+    margin: 20px auto;
+}
+/* Đoạn mã CSS tùy chỉnh */
+.custom-panel {
+    width: 300px; /* Kích thước chiều rộng tổng thể */
+    height: 450px; /* Kích thước chiều cao tổng thể */
+    /* Các thuộc tính CSS khác tùy theo nhu cầu của bạn */
+}
+
 @-webkit-keyframes uk-spinner-rotate {
     0% {
         -webkit-transform: rotate(0deg);
