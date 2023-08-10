@@ -4,44 +4,554 @@
         <meta charset="UTF-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Checkout</title>
+        <title>Home</title>
         <link
             rel="stylesheet"
             href="//fonts.googleapis.com/css?family=Roboto:400,500"
         />
-        <link rel="stylesheet" href="styles/style.css" />
-        <script src="scripts/uikit.js"></script>
-        <script src="scripts/uikit-icons.js"></script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/main.css"></link>
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+        <script src="./assets/scripts/uikit.js"></script>
+        <script src="./assets/scripts/uikit-icons.js"></script>
+        
     </head>
     <body>
         <div class="uk-offcanvas-content">
             <header>
-                <div class="uk-navbar-container tm-navbar-container">
+                
+                <div
+                    class="uk-navbar-container tm-navbar-container"
+                    uk-sticky="cls-active: tm-navbar-container-fixed"
+                >
                     <div class="uk-container" uk-navbar>
                         <div class="uk-navbar-left">
-                            <a class="uk-navbar-item uk-logo" href="index.html"
-                                ><img
-                                    src="images/logo.svg"
-                                    width="90"
-                                    height="32"
-                                    alt="Logo"
-                            /></a>
+                            <button
+                                class="uk-navbar-toggle uk-hidden@m"
+                                uk-toggle="target: #nav-offcanvas"
+                                uk-navbar-toggle-icon
+                            ></button
+                            ><a class="uk-navbar-item uk-logo brand-logo" href="index.html"
+                                >S2 HAND</a>
+                            <nav class="uk-visible@m">
+                                <ul class="uk-navbar-nav">
+                                    <li>
+                                        <a href="#"
+                                            >Sản phẩm<span
+                                                class="uk-margin-xsmall-left"
+                                                uk-icon="icon: chevron-down; ratio: .75;"
+                                            ></span
+                                        ></a>
+                                        <div
+                                            class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical"
+                                            uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x"
+                                        >
+                                            <div class="uk-container">
+                                                <ul
+                                                    class="uk-navbar-dropdown-grid uk-child-width-1-4"
+                                                    uk-grid
+                                                >
+                                                    <li>
+                                                        <div
+                                                            class="uk-margin-top uk-margin-bottom"
+                                                        >
+                                                            
+                                                                <div
+                                                                    class="uk-text-bolder"
+                                                                >
+                                                                    Áo
+                                                                </div>
+                                                            <ul
+                                                                class="uk-nav uk-nav-default"
+                                                            >
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Áo Thun</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Áo Sơ Mi</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Áo Polo</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Áo Khoác</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Áo Sweater</a
+                                                                    >
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="uk-margin-top uk-margin-bottom"
+                                                        >
+                                                            
+                                                                <div
+                                                                    class="uk-text-bolder"
+                                                                >
+                                                                    Quần
+                                                                </div>
+                                                            <ul
+                                                                class="uk-nav uk-nav-default"
+                                                            >
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Quần Jeans</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Quần Short</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Quần Jogger</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Quần Tây</a
+                                                                    >
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="uk-margin-top uk-margin-bottom"
+                                                        >
+                                                            
+                                                                <div
+                                                                    class="uk-text-bolder"
+                                                                >
+                                                                    Giày & Dép
+                                                                </div>
+                                                            <ul
+                                                                class="uk-nav uk-nav-default"
+                                                            >
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Giày Thể Thao</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Giày Tây</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Dép</a
+                                                                    >
+                                                                </li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="uk-margin-top uk-margin-bottom"
+                                                        >
+                                                            
+                                                                <div
+                                                                    class="uk-text-bolder"
+                                                                >
+                                                                    Túi & Phụ Kiện
+                                                                </div>
+                                                            <ul
+                                                                class="uk-nav uk-nav-default"
+                                                            >
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Túi Xách</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Túi Canvas</a
+                                                                    >
+                                                                </li>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        >Nón</a
+                                                                    >
+                                                                </li>
+                                                               
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </li>                                                  
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Thương hiệu<span
+                                                class="uk-margin-xsmall-left"
+                                                uk-icon="icon: chevron-down; ratio: .75;"
+                                            ></span
+                                        ></a>
+                                        <div
+                                            class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical"
+                                            uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x"
+                                        >
+                                            <div
+                                                class="uk-container uk-container-small uk-margin-top uk-margin-bottom"
+                                            >
+                                                <ul
+                                                    class="uk-grid-small uk-child-width-1-6"
+                                                    uk-grid
+                                                >
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Apple"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/3bbb8bf75b/ralph-lauren-3.png/m/640x0"
+                                                                        alt="Apple"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Samsung"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/2702c66a7e/nike-1.png/m/640x0"
+                                                                        alt="Samsung"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Sony"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/fd851dd099/adidas.png/m/640x0"
+                                                                        alt="Sony"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Microsoft"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/f0fe88bf4f/zara-2.png/m/640x0"
+                                                                        alt="Microsoft"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Intel"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/f4ae8600d3/cos-1.png/m/640x0"
+                                                                        alt="Intel"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="HP"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/f9cea543a6/allsaints-3.png/m/640x0"
+                                                                        alt="HP"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="LG"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/18c684de12/uniqlo.png/m/640x0"
+                                                                        alt="LG"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Lenovo"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/47299a557f/hugo-boss-3.png/m/640x0"
+                                                                        alt="Lenovo"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="ASUS"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/2d68741968/levi-s.png/m/640x0"
+                                                                        alt="ASUS"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Acer"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/34e6886e88/tommy-hilfiger-3.png/m/640x0"
+                                                                        alt="Acer"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Dell"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/6f7ed7090a/ted-baker-2.png/m/640x0"
+                                                                        alt="Dell"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div
+                                                            class="tm-ratio tm-ratio-4-3"
+                                                        >
+                                                            <a
+                                                                class="uk-link-muted uk-text-center uk-display-block uk-padding-small uk-box-shadow-hover-large tm-media-box"
+                                                                href="#"
+                                                                title="Canon"
+                                                                ><figure
+                                                                    class="tm-media-box-wrap"
+                                                                >
+                                                                    <img
+                                                                        src="https://a.storyblok.com/f/177537/400x400/0061a851a8/paul-smith-2.png/m/640x0"
+                                                                        alt="Canon"
+                                                                    /></figure
+                                                            ></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div
+                                                    class="uk-text-center uk-margin"
+                                                >
+                                                    <a
+                                                        class="uk-link-muted uk-text-uppercase tm-link-to-all"
+                                                        href="brands.html"
+                                                        ><span
+                                                            >Xem thêm</span
+                                                        ><span
+                                                            uk-icon="icon: chevron-right; ratio: .75;"
+                                                        ></span
+                                                    ></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>                                 
+                                    <li>
+                                        <a href="contacts.html">Hỗ trợ</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                         <div class="uk-navbar-right">
-                            <a class="uk-navbar-item uk-link-muted" href="#"
-                                ><span
-                                    class="uk-margin-xsmall-right"
-                                    uk-icon="icon: receiver; ratio: .75;"
-                                ></span
-                                ><span class="tm-pseudo"
-                                    >8 800 799 99 99</span
-                                ></a
+                            <a
+                                class="uk-navbar-toggle tm-navbar-button"
+                                href="#"
+                                uk-search-icon>
+                            </a>
+                            <div
+                                class="uk-navbar-dropdown uk-padding-small uk-margin-remove"
+                                uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x"
                             >
+                                <div class="uk-container">
+                                    <div
+                                        class="uk-grid-small uk-flex-middle"
+                                        uk-grid
+                                    >
+                                        <div class="uk-width-expand">
+                                            <form
+                                                class="uk-search uk-search-navbar uk-width-1-1"
+                                            >
+                                                <input
+                                                    class="uk-search-input"
+                                                    type="search"
+                                                    placeholder="Search…"
+                                                    autofocus
+                                                />
+                                            </form>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <a
+                                                class="uk-navbar-dropdown-close"
+                                                href="#"
+                                                uk-close
+                                            ></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a
+                                class="uk-navbar-item uk-link-muted tm-navbar-button"
+                                href="personal.html"
+                                uk-icon="user"
+                            ></a>
+                            <div
+                                class="uk-padding-small uk-margin-remove"
+                                uk-dropdown="pos: bottom-right; offset: -10; delay-hide: 200;"
+                                style="min-width: 150px"
+                            >
+                                <ul class="uk-nav uk-dropdown-nav">
+                                    <li>
+                                        <a href="#"
+                                            >Đơn hàng  <span class="uk-badge">2</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            >Yêu thích <span class="uk-badge">2</span></a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="personal.html">Thông tin</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thông báo <span class="uk-badge">2</span></a>
+                                    </li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="login.html">Đăng xuất</a></li>
+                                </ul>
+                            </div>
+                            <a
+                                class="uk-navbar-item uk-link-muted tm-navbar-button"
+                                href="cart.html"
+                                uk-toggle="target: #cart-offcanvas"
+                                onclick="return false"
+                                >
+                                <span uk-icon="cart"></span>
+                                <span class="uk-badge">2</span>
+                                </a>
                         </div>
                     </div>
                 </div>
             </header>
-            <main>
+            <main class="uk-container">
                 <section class="uk-section uk-section-small">
                     <div class="uk-container">
                         <div class="uk-grid-medium uk-child-width-1-1" uk-grid>
@@ -53,12 +563,12 @@
                                         class="uk-margin-xsmall-right"
                                         uk-icon="icon: arrow-left; ratio: .75;"
                                     ></span
-                                    >Return to cart</a
+                                    >Trở lại giỏ hàng</a
                                 >
                                 <h1
                                     class="uk-margin-small-top uk-margin-remove-bottom"
                                 >
-                                    Checkout
+                                    Thanh Toán
                                 </h1>
                             </section>
                             <section>
@@ -72,7 +582,7 @@
                                         >
                                             <section>
                                                 <h2 class="tm-checkout-title">
-                                                    Contact Information
+                                                    Xác nhận hợp đồng
                                                 </h2>
                                                 <div
                                                     class="uk-card uk-card-default uk-card-small uk-card-body tm-ignore-container"
@@ -86,7 +596,7 @@
                                                                 ><div
                                                                     class="uk-form-label uk-form-label-required"
                                                                 >
-                                                                    First Name
+                                                                    Tên
                                                                 </div>
                                                                 <input
                                                                     class="uk-input"
@@ -99,7 +609,7 @@
                                                                 ><div
                                                                     class="uk-form-label uk-form-label-required"
                                                                 >
-                                                                    Last Name
+                                                                    Tên Đệm
                                                                 </div>
                                                                 <input
                                                                     class="uk-input"
@@ -112,7 +622,7 @@
                                                                 ><div
                                                                     class="uk-form-label uk-form-label-required"
                                                                 >
-                                                                    Phone Number
+                                                                    Số Điện Thoại
                                                                 </div>
                                                                 <input
                                                                     class="uk-input"
@@ -138,7 +648,7 @@
                                             </section>
                                             <section>
                                                 <h2 class="tm-checkout-title">
-                                                    Shipping
+                                                    Giao hàng
                                                 </h2>
                                                 <div
                                                     class="uk-card uk-card-default uk-card-small uk-card-body tm-ignore-container"
@@ -155,14 +665,13 @@
                                                                 ><div
                                                                     class="tm-choose-title"
                                                                 >
-                                                                    pick up from
-                                                                    store
+                                                                    Lấy từ cửa hàng
                                                                 </div>
                                                                 <div
                                                                     class="tm-choose-description"
                                                                 >
-                                                                    Free,
-                                                                    tomorrow
+                                                                    Miễn phí, 
+                                                                    Ngày mai
                                                                 </div></a
                                                             >
                                                         </div>
@@ -173,14 +682,14 @@
                                                                 ><div
                                                                     class="tm-choose-title"
                                                                 >
-                                                                    delivery in
-                                                                    city
+                                                                    Vận chuyển trong công ty,
+                                                                    Miễn phí
                                                                 </div>
                                                                 <div
                                                                     class="tm-choose-description"
                                                                 >
-                                                                    Free,
-                                                                    tomorrow
+                                                                    miễn phí,
+                                                                    ngày mai
                                                                 </div></a
                                                             >
                                                         </div>
@@ -191,19 +700,20 @@
                                                                 ><div
                                                                     class="tm-choose-title"
                                                                 >
-                                                                    regional
-                                                                    delivery
+                                                                    giao hàng
+                                                                    khu vực
                                                                 </div>
                                                                 <div
                                                                     class="tm-choose-description"
                                                                 >
-                                                                    Via Russian
-                                                                    Post or
-                                                                    postal
-                                                                    courier
-                                                                    services.
-                                                                    Sending to
-                                                                    any country
+                                                                Thông qua 
+                                                                Dịch vụ 
+                                                                Bưu chính 
+                                                                Nga hoặc 
+                                                                dịch vụ 
+                                                                chuyển phát 
+                                                                bưu điện. 
+                                                                Gửi đến bất kỳ quốc gia nào
                                                                 </div></a
                                                             >
                                                         </div>
@@ -230,15 +740,14 @@
                                                                     <div
                                                                         class="uk-text-bolder"
                                                                     >
-                                                                        Store
-                                                                        Name
+                                                                        Tên cửa hàng
                                                                     </div>
                                                                     <div>
-                                                                        St.&nbsp;Petersburg,
-                                                                        Nevsky&nbsp;Prospect&nbsp;28
+                                                                        27.&nbsp;Tôn thất tùng,
+                                                                        phường 04&nbsp;tp.Đà Lạt&nbsp;
                                                                     </div>
                                                                     <div>
-                                                                        Daily
+                                                                        Hàng ngày
                                                                         10:00–22:00
                                                                     </div>
                                                                 </div>
@@ -256,7 +765,7 @@
                                                                         ><div
                                                                             class="uk-form-label uk-form-label-required"
                                                                         >
-                                                                            Street
+                                                                            Đường
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -270,7 +779,7 @@
                                                                         ><div
                                                                             class="uk-form-label uk-form-label-required"
                                                                         >
-                                                                            House
+                                                                            Nhà
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -287,7 +796,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Building
+                                                                            Tòa Nhà
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -299,7 +808,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Entrance
+                                                                            Lỗi vào
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -323,7 +832,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Apartment
+                                                                            Căn hộ
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -337,7 +846,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Comment
+                                                                            Bình luận
                                                                         </div>
                                                                         <textarea
                                                                             class="uk-textarea"
@@ -354,46 +863,46 @@
                                                                 <div
                                                                     class="uk-width-1-1 uk-text-meta"
                                                                 >
-                                                                    Choose a
-                                                                    convenient
-                                                                    date and
-                                                                    delivery
-                                                                    interval
+                                                                    Chọn một 
+                                                                    ngày
+                                                                    thuận lợi và
+                                                                    khoảng thời gian
+                                                                    vận chuyển
                                                                 </div>
                                                                 <div>
                                                                     <select
                                                                         class="uk-select"
                                                                     >
                                                                         <option>
-                                                                            Tomorrow
+                                                                            Ngày mai
                                                                         </option>
                                                                         <option>
                                                                             25
-                                                                            May
+                                                                            tháng5
                                                                         </option>
                                                                         <option>
                                                                             26
-                                                                            May
+                                                                            tháng 5
                                                                         </option>
                                                                         <option>
                                                                             27
-                                                                            May
+                                                                            tháng 5
                                                                         </option>
                                                                         <option>
                                                                             28
-                                                                            May
+                                                                            tháng 5
                                                                         </option>
                                                                         <option>
                                                                             29
-                                                                            May
+                                                                            tháng 5
                                                                         </option>
                                                                         <option>
                                                                             30
-                                                                            May
+                                                                            tháng 5
                                                                         </option>
                                                                         <option>
                                                                             1
-                                                                            June
+                                                                            tháng 1
                                                                         </option>
                                                                     </select>
                                                                 </div>
@@ -442,20 +951,20 @@
                                                                         ><div
                                                                             class="uk-form-label uk-form-label-required"
                                                                         >
-                                                                            Country
+                                                                            Đất nước
                                                                         </div>
                                                                         <select
                                                                             class="uk-select"
                                                                         >
                                                                             <option>
-                                                                                Choose
-                                                                                the
-                                                                                country
+                                                                                Chọn 
+                                                                                đất
+                                                                                nước
                                                                             </option>
                                                                             <option
                                                                                 value="RU"
                                                                             >
-                                                                                Russia
+                                                                                Nga
                                                                             </option>
                                                                         </select></label
                                                                     >
@@ -472,7 +981,7 @@
                                                                         ><div
                                                                             class="uk-form-label uk-form-label-required"
                                                                         >
-                                                                            City
+                                                                            Thành phố
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -486,8 +995,8 @@
                                                                         ><div
                                                                             class="uk-form-label uk-form-label-required"
                                                                         >
-                                                                            Post
-                                                                            Code
+                                                                            Nhập 
+                                                                            Mã
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -506,7 +1015,7 @@
                                                                         ><div
                                                                             class="uk-form-label uk-form-label-required"
                                                                         >
-                                                                            Street
+                                                                            Đường
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -520,7 +1029,7 @@
                                                                         ><div
                                                                             class="uk-form-label uk-form-label-required"
                                                                         >
-                                                                            House
+                                                                            Nhà
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -537,7 +1046,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Building
+                                                                            Tòa nhà
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -549,7 +1058,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Entrance
+                                                                            Lỗi vào
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -561,7 +1070,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Floor
+                                                                            Sàn nhà
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -573,7 +1082,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Apartment
+                                                                            Căn hộ
                                                                         </div>
                                                                         <input
                                                                             class="uk-input"
@@ -587,7 +1096,7 @@
                                                                         ><div
                                                                             class="uk-form-label"
                                                                         >
-                                                                            Comment
+                                                                            Bình luận
                                                                         </div>
                                                                         <textarea
                                                                             class="uk-textarea"
@@ -603,7 +1112,7 @@
                                             </section>
                                             <section>
                                                 <h2 class="tm-checkout-title">
-                                                    Payment
+                                                    Phương thức trả tiền
                                                 </h2>
                                                 <div
                                                     class="uk-card uk-card-default uk-card-small tm-ignore-container"
@@ -621,16 +1130,15 @@
                                                                     ><div
                                                                         class="tm-choose-title"
                                                                     >
-                                                                        payment
-                                                                        upon
-                                                                        receipt
+                                                                        Trả tiền 
+                                                                        khi 
+                                                                        nhận hàng
                                                                     </div>
                                                                     <div
                                                                         class="tm-choose-description"
                                                                     >
-                                                                        Cash,
-                                                                        credit
-                                                                        card
+                                                                        Tiền mặt,
+                                                                        Thẻ tín dụng
                                                                     </div></a
                                                                 >
                                                             </div>
@@ -641,8 +1149,7 @@
                                                                     ><div
                                                                         class="tm-choose-title"
                                                                     >
-                                                                        online
-                                                                        by card
+                                                                        Thẻ trực tuyến
                                                                     </div>
                                                                     <div
                                                                         class="tm-choose-description"
@@ -659,8 +1166,8 @@
                                                                     ><div
                                                                         class="tm-choose-title"
                                                                     >
-                                                                        electronic
-                                                                        payment
+                                                                        Thanh toán 
+                                                                        điện tử
                                                                     </div>
                                                                     <div
                                                                         class="tm-choose-description"
@@ -685,10 +1192,11 @@
                                                                     class="uk-margin-xsmall-right"
                                                                     uk-icon="icon: lock; ratio: .75;"
                                                                 ></span
-                                                                >Security of
-                                                                payments is is
-                                                                provided by
-                                                                secure protocols
+                                                                >An ninh 
+                                                                trong việc 
+                                                                thanh toán 
+                                                                được đảm bảo bởi 
+                                                                các giao thức bảo mật
                                                             </div>
                                                             <div>
                                                                 <img
@@ -722,7 +1230,7 @@
                                             uk-sticky="offset: 30; bottom: true; media: @m;"
                                         >
                                             <section class="uk-card-body">
-                                                <h4>Items in order</h4>
+                                                <h4>Sản phẩm đã đặt</h4>
                                                 <div
                                                     class="uk-grid-small"
                                                     uk-grid
@@ -784,17 +1292,17 @@
                                                         <div
                                                             class="uk-text-muted"
                                                         >
-                                                            Shipping
+                                                            Giao hàng
                                                         </div>
                                                     </div>
                                                     <div class="uk-text-right">
                                                         <div>
-                                                            Pick up from store
+                                                            Nhận từ cửa hàng
                                                         </div>
                                                         <div
                                                             class="uk-text-meta"
                                                         >
-                                                            Free, tomorrow
+                                                            Miễn phí, Ngày mai
                                                         </div>
                                                     </div>
                                                 </div>
@@ -808,12 +1316,12 @@
                                                         <div
                                                             class="uk-text-muted"
                                                         >
-                                                            Payment
+                                                            Trả tiền
                                                         </div>
                                                     </div>
                                                     <div class="uk-text-right">
                                                         <div>
-                                                            Online by card
+                                                            Thẻ trực tuyến
                                                         </div>
                                                     </div>
                                                 </div>
@@ -829,7 +1337,7 @@
                                                         <div
                                                             class="uk-text-muted"
                                                         >
-                                                            Subtotal
+                                                           Tạm Tổng Tính
                                                         </div>
                                                     </div>
                                                     <div class="uk-text-right">
@@ -846,7 +1354,7 @@
                                                         <div
                                                             class="uk-text-muted"
                                                         >
-                                                            Discount
+                                                            Giảm giá
                                                         </div>
                                                     </div>
                                                     <div class="uk-text-right">
@@ -869,7 +1377,7 @@
                                                         <div
                                                             class="uk-text-muted"
                                                         >
-                                                            Total
+                                                            Tổng Tiền
                                                         </div>
                                                     </div>
                                                     <div class="uk-text-right">
@@ -883,7 +1391,7 @@
                                                 <button
                                                     class="uk-button uk-button-primary uk-margin-small uk-width-1-1"
                                                 >
-                                                    checkout
+                                                    Thanh Toán
                                                 </button>
                                             </section>
                                         </div>
@@ -894,34 +1402,427 @@
                     </div>
                 </section>
             </main>
-            <footer>
-                <div
-                    class="uk-section uk-section-secondary uk-section-small uk-light"
-                >
-                    <div class="uk-container">
-                        <div class="uk-flex-middle" uk-grid>
-                            <div class="uk-width-expand">
-                                <div>© Company Name. All rights reserved</div>
-                            </div>
-                            <div>
-                                <a class="uk-link-muted" href="#"
-                                    ><span
-                                        class="uk-margin-xsmall-right"
-                                        uk-icon="icon: receiver; ratio: .75;"
-                                    ></span
-                                    ><span class="tm-pseudo"
-                                        >8 800 799 99 99</span
-                                    ></a
-                                >
-                            </div>
+                        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted">
+            <!-- Section: Social media -->
+            
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i
+                                >devYersin
+                            </h6>
+                            <p>
+                                Yersin dev fesher, học việc, dev khởi nghiệp,
+                                vui là chính nhưng thu nhập bằng zero.
+                            </p>
                         </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                SẢN PHẨM
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">ÁO</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">QUẦN</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">TÚI SÁCH</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">GIÀY DÉP</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Mạng xã hội
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">FACEBOOK</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">INSTAGRAM</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">TWITTER</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div
+                            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+                        >
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                            <p>
+                                <i class="fas fa-home me-3 text-secondary"></i>
+                                80 Mai Anh Đào, P8, Đà Lạt
+                            </p>
+                            <p>
+                                <i
+                                    class="fas fa-envelope me-3 text-secondary"
+                                ></i>
+                                yersinuniversity.edu.vn
+                            </p>
+                            <p>
+                                <i class="fas fa-phone me-3 text-secondary"></i>
+                                +84559404304
+                            </p>
+                        </div>
+                        <!-- Grid column -->
                     </div>
+                    <!-- Grid row -->
                 </div>
-            </footer>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div
+                class="text-center p-4"
+                style="background-color: rgba(0, 0, 0, 0.025)"
+            >
+                © 2023 devYersin
+            </div>
+            <!-- Copyright -->
+
+            <!-- Footer -->
+        </footer>
+        
+            <div id="nav-offcanvas" uk-offcanvas="overlay: true">
+                <aside class="uk-offcanvas-bar uk-padding-remove">
+                    <div
+                        class="uk-card uk-card-default uk-card-small tm-shadow-remove"
+                    >
+                        
+                        <nav class="uk-card-small uk-card-body">
+                            <ul
+                                class="uk-nav-default uk-nav-parent-icon uk-list-divider"
+                                uk-nav
+                            >
+                                <li class="uk-parent">
+                                    <a href="catalog.html">Sản phẩm</a>
+                                    <ul class="uk-nav-sub uk-list-divider">
+                                        <li>
+                                            <a href="subcategory.html"
+                                                >Áo</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html"
+                                                >Quần</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html"
+                                                >Giày & Dép</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html"
+                                                >Túi & Phụ Kiện</a
+                                            >
+                                        </li>
+                                        <li class="uk-text-center">
+                                            <a
+                                                class="uk-link-muted uk-text-uppercase tm-link-to-all"
+                                                href="catalog.html"
+                                                ><span>Xem Thêm</span
+                                                ><span
+                                                    uk-icon="icon: chevron-right; ratio: .75;"
+                                                ></span
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="uk-parent">
+                                    <a href="brands.html">Thương hiệu</a>
+                                    <ul class="uk-nav-sub uk-list-divider">
+                                        <li>
+                                            <a href="#">RALPH LAUREN</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >NIKE</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="#">ADIDAS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                >ZARA</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html">COS</a>
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html">ALLSAINTS</a>
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html">UNIQLO</a>
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html"
+                                                >BOSS</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html">LEVI'S</a>
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html">TED BAKER</a>
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html">TOMMY HILFIGER</a>
+                                        </li>
+                                        <li>
+                                            <a href="subcategory.html">PAUL SMITH</a>
+                                        </li>
+                                        <li class="uk-text-center">
+                                            <a
+                                                class="uk-link-muted uk-text-uppercase tm-link-to-all"
+                                                href="brands.html"
+                                                ><span>xem Thêm</span
+                                                ><span
+                                                    uk-icon="icon: chevron-right; ratio: .75;"
+                                                ></span
+                                            ></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Hỗ trợ</a></li>
+                                
+                            </ul>
+                        </nav>
+                       
+                        <nav class="uk-card-body">
+                            <ul class="uk-iconnav uk-flex-center">
+                                <li>
+                                    <a
+                                        href="#"
+                                        title="Facebook"
+                                        uk-icon="facebook"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        title="Twitter"
+                                        uk-icon="twitter"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        title="YouTube"
+                                        uk-icon="youtube"
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        title="Instagram"
+                                        uk-icon="instagram"
+                                    ></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+            </div>
+            <div id="cart-offcanvas" uk-offcanvas="overlay: true; flip: true">
+                <aside class="uk-offcanvas-bar uk-padding-remove">
+                    <div
+                        class="uk-card uk-card-default uk-card-small uk-height-1-1 uk-flex uk-flex-column tm-shadow-remove"
+                    >
+                        <header class="uk-card-header uk-flex uk-flex-middle">
+                            <div class="uk-grid-small uk-flex-1" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="uk-h3">Giỏ Hàng</div>
+                                </div>
+                                <button
+                                    class="uk-offcanvas-close"
+                                    type="button"
+                                    uk-close
+                                ></button>
+                            </div>
+                        </header>
+                        <div class="uk-card-body uk-overflow-auto">
+                            <ul class="uk-list uk-list-divider">
+                                <li class="uk-visible-toggle">
+                                    <arttcle
+                                        ><div class="uk-grid-small" uk-grid>
+                                            <div class="uk-width-1-4">
+                                                <div
+                                                    class="tm-ratio tm-ratio-4-3"
+                                                >
+                                                    <a
+                                                        class="tm-media-box"
+                                                        href="product.html"
+                                                        ><figure
+                                                            class="tm-media-box-wrap"
+                                                        >
+                                                            <img
+                                                                src="assets/img/products/SweaterNike.jpg"
+                                                                alt='Nike Sport Swear Jacket'
+                                                            /></figure
+                                                    ></a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div
+                                                    class="uk-text-meta uk-text-xsmall"
+                                                >
+                                                    Áo khoác
+                                                </div>
+                                                <div
+                                                    class="uk-link-heading uk-text-small"
+                                                    
+                                                    >Áo khoác nam Nike Sport</div
+                                                >
+                                                <div
+                                                    class="uk-margin-xsmall uk-grid-small uk-flex-middle"
+                                                    uk-grid
+                                                >
+                                                    <div
+                                                        class="uk-text-bolder uk-text-small"
+                                                    >
+                                                        250.000VNĐ
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a
+                                                    class="uk-icon-link uk-text-danger uk-invisible-hover"
+                                                    href="#"
+                                                    uk-icon="icon: close; ratio: .75"
+                                                    uk-tooltip="Remove"
+                                                ></a>
+                                            </div></div
+                                    ></arttcle>
+                                </li>
+                                <li class="uk-visible-toggle">
+                                    <arttcle
+                                        ><div class="uk-grid-small" uk-grid>
+                                            <div class="uk-width-1-4">
+                                                <div
+                                                    class="tm-ratio tm-ratio-4-3"
+                                                >
+                                                    <a
+                                                        class="tm-media-box"
+                                                        href="product.html"
+                                                        ><figure
+                                                            class="tm-media-box-wrap"
+                                                        >
+                                                            <img
+                                                                src="assets/img/products/SweaterNike.jpg"
+                                                                alt='Nike Sport Swear Jacket'
+                                                            /></figure
+                                                    ></a>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <div
+                                                    class="uk-text-meta uk-text-xsmall"
+                                                >
+                                                    Áo khoác
+                                                </div>
+                                                <div
+                                                    class="uk-link-heading uk-text-small"
+                                                   
+                                                    >Áo khoác nam Nike Sport</div
+                                                >
+                                                <div
+                                                    class="uk-margin-xsmall uk-grid-small uk-flex-middle"
+                                                    uk-grid
+                                                >
+                                                    <div
+                                                        class="uk-text-bolder uk-text-small"
+                                                    >
+                                                        250.000VNĐ
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a
+                                                    class="uk-icon-link uk-text-danger uk-invisible-hover"
+                                                    href="#"
+                                                    uk-icon="icon: close; ratio: .75"
+                                                    uk-tooltip="Remove"
+                                                ></a>
+                                            </div></div
+                                    ></arttcle>
+                                </li>
+                            </ul>
+                        </div>
+                        <footer class="uk-card-footer">
+                            <div class="uk-grid-small" uk-grid>
+                                <div
+                                    class="uk-width-expand uk-text-muted uk-h4"
+                                >
+                                    Tổng
+                                </div>
+                                <div class="uk-h4 uk-text-bolder">500.000VNĐ</div>
+                            </div>
+                            <div
+                                class="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-margin-small"
+                                uk-grid
+                            >
+                                <div>
+                                    <a
+                                        class="uk-button uk-button-default uk-margin-small uk-width-1-1"
+                                        href="cart.html"
+                                        >Xem Giỏ Hàng</a
+                                    >
+                                </div>
+                                <div>
+                                    <a
+                                        class="uk-button uk-button-primary uk-margin-small uk-width-1-1"
+                                        href="checkout.html"
+                                        >Thanh Toán</a
+                                    >
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </aside>
+            </div>
         </div>
-        <script src="scripts/script.js"></script>
+
+
+        <!-- SCRIPT -->
+        <script src="assets/scripts/bootstrap.js"></script>
+        <script src="assets/scripts/script.js"></script>
         <script
             src="//maps.googleapis.com/maps/api/js?key=AIzaSyClyjCemJi4m2q78gNeGkhlckpdH1hzTYA&amp;callback=initMap"
+            async
+            defer
+        ></script>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/d7608d3ae4.js" crossorigin="anonymous"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
             async
             defer
         ></script>
