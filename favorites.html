@@ -4,118 +4,22 @@
         <meta charset="UTF-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Favorites</title>
+        <title>Home</title>
         <link
             rel="stylesheet"
             href="//fonts.googleapis.com/css?family=Roboto:400,500"
         />
-        <link rel="stylesheet" href="styles/style.css" />
-        <script src="scripts/uikit.js"></script>
-        <script src="scripts/uikit-icons.js"></script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/main.css"></link>
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+        <script src="./assets/scripts/uikit.js"></script>
+        <script src="./assets/scripts/uikit-icons.js"></script>
+        
     </head>
     <body>
         <div class="uk-offcanvas-content">
             <header>
-                <div
-                    class="uk-navbar-container uk-light uk-visible@m tm-toolbar-container"
-                >
-                    <div class="uk-container" uk-navbar>
-                        <div class="uk-navbar-left">
-                            <nav>
-                                <ul class="uk-navbar-nav">
-                                    <li>
-                                        <a href="#"
-                                            ><span
-                                                class="uk-margin-xsmall-right"
-                                                uk-icon="icon: receiver; ratio: .75;"
-                                            ></span
-                                            ><span class="tm-pseudo"
-                                                >8 800 799 99 99</span
-                                            ></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="contacts.html"
-                                            onclick="return false"
-                                            ><span
-                                                class="uk-margin-xsmall-right"
-                                                uk-icon="icon: location; ratio: .75;"
-                                            ></span
-                                            ><span class="tm-pseudo"
-                                                >Store in St. Petersburg</span
-                                            ><span
-                                                uk-icon="icon: triangle-down; ratio: .75;"
-                                            ></span
-                                        ></a>
-                                        <div
-                                            class="uk-margin-remove"
-                                            uk-drop="mode: click; pos: bottom-center;"
-                                        >
-                                            <div
-                                                class="uk-card uk-card-default uk-card-small uk-box-shadow-xlarge uk-overflow-hidden uk-padding-small uk-padding-remove-horizontal uk-padding-remove-bottom"
-                                            >
-                                                <figure
-                                                    class="uk-card-media-top uk-height-small js-map"
-                                                    data-latitude="59.9356728"
-                                                    data-longitude="30.3258604"
-                                                    data-zoom="14"
-                                                ></figure>
-                                                <div class="uk-card-body">
-                                                    <div class="uk-text-small">
-                                                        <div
-                                                            class="uk-text-bolder"
-                                                        >
-                                                            Store Name
-                                                        </div>
-                                                        <div>
-                                                            St.&nbsp;Petersburg,
-                                                            Nevsky&nbsp;Prospect&nbsp;28
-                                                        </div>
-                                                        <div>
-                                                            Daily 10:00–22:00
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="uk-margin-small"
-                                                    >
-                                                        <a
-                                                            class="uk-link-muted uk-text-uppercase tm-link-to-all uk-link-reset"
-                                                            href="contacts.html"
-                                                            ><span
-                                                                >contacts</span
-                                                            ><span
-                                                                uk-icon="icon: chevron-right; ratio: .75;"
-                                                            ></span
-                                                        ></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-navbar-item">
-                                            <span
-                                                class="uk-margin-xsmall-right"
-                                                uk-icon="icon: clock; ratio: .75;"
-                                            ></span
-                                            >Daily 10:00–22:00
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="uk-navbar-right">
-                            <nav>
-                                <ul class="uk-navbar-nav">
-                                    <li><a href="news.html">News</a></li>
-                                    <li><a href="faq.html">FAQ</a></li>
-                                    <li><a href="#">Payment</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+                
                 <div
                     class="uk-navbar-container tm-navbar-container"
                     uk-sticky="cls-active: tm-navbar-container-fixed"
@@ -127,18 +31,13 @@
                                 uk-toggle="target: #nav-offcanvas"
                                 uk-navbar-toggle-icon
                             ></button
-                            ><a class="uk-navbar-item uk-logo" href="index.html"
-                                ><img
-                                    src="images/logo.svg"
-                                    width="90"
-                                    height="32"
-                                    alt="Logo"
-                            /></a>
+                            ><a class="uk-navbar-item uk-logo brand-logo" href="index.html"
+                                >S2 HAND</a>
                             <nav class="uk-visible@m">
                                 <ul class="uk-navbar-nav">
                                     <li>
-                                        <a href="catalog.html"
-                                            >Catalog<span
+                                        <a href="#"
+                                            >Sản phẩm<span
                                                 class="uk-margin-xsmall-left"
                                                 uk-icon="icon: chevron-down; ratio: .75;"
                                             ></span
@@ -149,62 +48,50 @@
                                         >
                                             <div class="uk-container">
                                                 <ul
-                                                    class="uk-navbar-dropdown-grid uk-child-width-1-5"
+                                                    class="uk-navbar-dropdown-grid uk-child-width-1-4"
                                                     uk-grid
                                                 >
                                                     <li>
                                                         <div
                                                             class="uk-margin-top uk-margin-bottom"
                                                         >
-                                                            <a
-                                                                class="uk-link-reset"
-                                                                href="category.html"
-                                                                ><img
-                                                                    class="uk-display-block uk-margin-auto uk-margin-bottom"
-                                                                    src="images/catalog/computers.svg"
-                                                                    alt="Laptops &amp; Tablets"
-                                                                    width="80"
-                                                                    height="80"
-                                                                />
+                                                            
                                                                 <div
                                                                     class="uk-text-bolder"
                                                                 >
-                                                                    Laptops
-                                                                    &amp;
-                                                                    Tablets
-                                                                </div></a
-                                                            >
+                                                                    Áo
+                                                                </div>
                                                             <ul
                                                                 class="uk-nav uk-nav-default"
                                                             >
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Laptops</a
+                                                                        href="#"
+                                                                        >Áo Thun</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Tablets</a
+                                                                        href="#"
+                                                                        >Áo Sơ Mi</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Peripherals</a
+                                                                        href="#"
+                                                                        >Áo Polo</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Keyboards</a
+                                                                        href="#"
+                                                                        >Áo Khoác</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Accessories</a
+                                                                        href="#"
+                                                                        >Áo Sweater</a
                                                                     >
                                                                 </li>
                                                             </ul>
@@ -214,60 +101,40 @@
                                                         <div
                                                             class="uk-margin-top uk-margin-bottom"
                                                         >
-                                                            <a
-                                                                class="uk-link-reset"
-                                                                href="category.html"
-                                                                ><img
-                                                                    class="uk-display-block uk-margin-auto uk-margin-bottom"
-                                                                    src="images/catalog/phones.svg"
-                                                                    alt="Phones &amp; Gadgets"
-                                                                    width="80"
-                                                                    height="80"
-                                                                />
+                                                            
                                                                 <div
                                                                     class="uk-text-bolder"
                                                                 >
-                                                                    Phones &amp;
-                                                                    Gadgets
-                                                                </div></a
-                                                            >
+                                                                    Quần
+                                                                </div>
                                                             <ul
                                                                 class="uk-nav uk-nav-default"
                                                             >
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Smartphones</a
+                                                                        href="#"
+                                                                        >Quần Jeans</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Mobile
-                                                                        Phones</a
+                                                                        href="#"
+                                                                        >Quần Short</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Smart
-                                                                        watches</a
+                                                                        href="#"
+                                                                        >Quần Jogger</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Charging
-                                                                        and
-                                                                        batteries</a
+                                                                        href="#"
+                                                                        >Quần Tây</a
                                                                     >
                                                                 </li>
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >Accessories</a
-                                                                    >
-                                                                </li>
+                                                                
                                                             </ul>
                                                         </div>
                                                     </li>
@@ -275,68 +142,34 @@
                                                         <div
                                                             class="uk-margin-top uk-margin-bottom"
                                                         >
-                                                            <a
-                                                                class="uk-link-reset"
-                                                                href="category.html"
-                                                                ><img
-                                                                    class="uk-display-block uk-margin-auto uk-margin-bottom"
-                                                                    src="images/catalog/tv.svg"
-                                                                    alt="TV &amp; Video"
-                                                                    width="80"
-                                                                    height="80"
-                                                                />
+                                                            
                                                                 <div
                                                                     class="uk-text-bolder"
                                                                 >
-                                                                    TV &amp;
-                                                                    Video
-                                                                </div></a
-                                                            >
+                                                                    Giày & Dép
+                                                                </div>
                                                             <ul
                                                                 class="uk-nav uk-nav-default"
                                                             >
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >TV</a
+                                                                        href="#"
+                                                                        >Giày Thể Thao</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Home
-                                                                        Cinema</a
+                                                                        href="#"
+                                                                        >Giày Tây</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Satellite
-                                                                        &amp;
-                                                                        Cable
-                                                                        TV</a
+                                                                        href="#"
+                                                                        >Dép</a
                                                                     >
                                                                 </li>
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >Projectors</a
-                                                                    >
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >DVD
-                                                                        &amp;
-                                                                        Blu-ray</a
-                                                                    >
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >Accessories</a
-                                                                    >
-                                                                </li>
+                                                                
                                                             </ul>
                                                         </div>
                                                     </li>
@@ -344,113 +177,45 @@
                                                         <div
                                                             class="uk-margin-top uk-margin-bottom"
                                                         >
-                                                            <a
-                                                                class="uk-link-reset"
-                                                                href="category.html"
-                                                                ><img
-                                                                    class="uk-display-block uk-margin-auto uk-margin-bottom"
-                                                                    src="images/catalog/games.svg"
-                                                                    alt="Games &amp; Entertainment"
-                                                                    width="80"
-                                                                    height="80"
-                                                                />
+                                                            
                                                                 <div
                                                                     class="uk-text-bolder"
                                                                 >
-                                                                    Games &amp;
-                                                                    Entertainment
-                                                                </div></a
-                                                            >
+                                                                    Túi & Phụ Kiện
+                                                                </div>
                                                             <ul
                                                                 class="uk-nav uk-nav-default"
                                                             >
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Gaming
-                                                                        consoles</a
+                                                                        href="#"
+                                                                        >Túi Xách</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Games</a
+                                                                        href="#"
+                                                                        >Túi Canvas</a
                                                                     >
                                                                 </li>
                                                                 <li>
                                                                     <a
-                                                                        href="subcategory.html"
-                                                                        >Software</a
+                                                                        href="#"
+                                                                        >Nón</a
                                                                     >
                                                                 </li>
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >Joysticks
-                                                                        &amp;
-                                                                        gamepads</a
-                                                                    >
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >Accessories</a
-                                                                    >
-                                                                </li>
+                                                               
+                                                                
                                                             </ul>
                                                         </div>
-                                                    </li>
-                                                    <li>
-                                                        <div
-                                                            class="uk-margin-top uk-margin-bottom"
-                                                        >
-                                                            <a
-                                                                class="uk-link-reset"
-                                                                href="category.html"
-                                                                ><img
-                                                                    class="uk-display-block uk-margin-auto uk-margin-bottom"
-                                                                    src="images/catalog/photo.svg"
-                                                                    alt="Photo"
-                                                                    width="80"
-                                                                    height="80"
-                                                                />
-                                                                <div
-                                                                    class="uk-text-bolder"
-                                                                >
-                                                                    Photo
-                                                                </div></a
-                                                            >
-                                                            <ul
-                                                                class="uk-nav uk-nav-default"
-                                                            >
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >Cameras</a
-                                                                    >
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >Lenses</a
-                                                                    >
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        href="subcategory.html"
-                                                                        >Accessories</a
-                                                                    >
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </li>
+                                                    </li>                                                  
                                                 </ul>
                                             </div>
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="brands.html"
-                                            >Brands<span
+                                        <a href="#"
+                                            >Thương hiệu<span
                                                 class="uk-margin-xsmall-left"
                                                 uk-icon="icon: chevron-down; ratio: .75;"
                                             ></span
@@ -478,7 +243,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/apple.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/3bbb8bf75b/ralph-lauren-3.png/m/640x0"
                                                                         alt="Apple"
                                                                     /></figure
                                                             ></a>
@@ -496,7 +261,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/samsung.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/2702c66a7e/nike-1.png/m/640x0"
                                                                         alt="Samsung"
                                                                     /></figure
                                                             ></a>
@@ -514,7 +279,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/sony.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/fd851dd099/adidas.png/m/640x0"
                                                                         alt="Sony"
                                                                     /></figure
                                                             ></a>
@@ -532,7 +297,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/microsoft.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/f0fe88bf4f/zara-2.png/m/640x0"
                                                                         alt="Microsoft"
                                                                     /></figure
                                                             ></a>
@@ -550,7 +315,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/intel.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/f4ae8600d3/cos-1.png/m/640x0"
                                                                         alt="Intel"
                                                                     /></figure
                                                             ></a>
@@ -568,7 +333,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/hp.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/f9cea543a6/allsaints-3.png/m/640x0"
                                                                         alt="HP"
                                                                     /></figure
                                                             ></a>
@@ -586,7 +351,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/lg.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/18c684de12/uniqlo.png/m/640x0"
                                                                         alt="LG"
                                                                     /></figure
                                                             ></a>
@@ -604,7 +369,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/lenovo.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/47299a557f/hugo-boss-3.png/m/640x0"
                                                                         alt="Lenovo"
                                                                     /></figure
                                                             ></a>
@@ -622,7 +387,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/asus.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/2d68741968/levi-s.png/m/640x0"
                                                                         alt="ASUS"
                                                                     /></figure
                                                             ></a>
@@ -640,7 +405,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/acer.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/34e6886e88/tommy-hilfiger-3.png/m/640x0"
                                                                         alt="Acer"
                                                                     /></figure
                                                             ></a>
@@ -658,7 +423,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/dell.svg"
+                                                                        src="https://a.storyblok.com/f/177537/400x400/6f7ed7090a/ted-baker-2.png/m/640x0"
                                                                         alt="Dell"
                                                                     /></figure
                                                             ></a>
@@ -676,8 +441,7 @@
                                                                     class="tm-media-box-wrap"
                                                                 >
                                                                     <img
-                                                                        src="images/brands/canon.svg"
-                                                                        alt="Canon"
+                                                                    src="https://a.storyblok.com/f/177537/900x600/10a6b3612e/45.png/m/1080x0" width="400" height="600" alt=""
                                                                     /></figure
                                                             ></a>
                                                         </div>
@@ -690,8 +454,7 @@
                                                         class="uk-link-muted uk-text-uppercase tm-link-to-all"
                                                         href="brands.html"
                                                         ><span
-                                                            >See all
-                                                            brands</span
+                                                            >Xem thêm</span
                                                         ><span
                                                             uk-icon="icon: chevron-right; ratio: .75;"
                                                         ></span
@@ -699,138 +462,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li>                                 
                                     <li>
-                                        <a href="#"
-                                            >Pages<span
-                                                class="uk-margin-xsmall-left"
-                                                uk-icon="icon: chevron-down; ratio: .75;"
-                                            ></span
-                                        ></a>
-                                        <div
-                                            class="uk-navbar-dropdown uk-margin-remove uk-padding-remove-vertical"
-                                            uk-drop="pos: bottom-justify;delay-show: 125;delay-hide: 50;duration: 75;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x"
-                                        >
-                                            <div
-                                                class="uk-container uk-container-small uk-margin-top uk-margin-bottom"
-                                            >
-                                                <ul
-                                                    class="uk-nav uk-nav-default uk-column-1-3"
-                                                >
-                                                    <li>
-                                                        <a href="catalog.html"
-                                                            >Catalog</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="category.html"
-                                                            >Category</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="subcategory.html"
-                                                            >Subcategory</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="product.html"
-                                                            >Product</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="cart.html"
-                                                            >Cart</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="checkout.html"
-                                                            >Checkout</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="compare.html"
-                                                            >Compare</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="brands.html"
-                                                            >Brands</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="compare.html"
-                                                            >Compare</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="account.html"
-                                                            >Account</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="favorites.html"
-                                                            >Favorites</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="personal.html"
-                                                            >Personal</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="settings.html"
-                                                            >Settings</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="about.html"
-                                                            >About</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="contacts.html"
-                                                            >Contacts</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="blog.html"
-                                                            >Blog</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="news.html"
-                                                            >News</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="article.html"
-                                                            >Article</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="faq.html"
-                                                            >FAQ</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="delivery.html"
-                                                            >Delivery</a
-                                                        >
-                                                    </li>
-                                                    <li>
-                                                        <a href="404.html"
-                                                            >404</a
-                                                        >
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li>
-                                        <a href="contacts.html">Contacts</a>
+                                        <a href="contacts.html">Hỗ trợ</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -839,8 +473,8 @@
                             <a
                                 class="uk-navbar-toggle tm-navbar-button"
                                 href="#"
-                                uk-search-icon
-                            ></a>
+                                uk-search-icon>
+                            </a>
                             <div
                                 class="uk-navbar-dropdown uk-padding-small uk-margin-remove"
                                 uk-drop="mode: click;cls-drop: uk-navbar-dropdown;boundary: .tm-navbar-container;boundary-align: true;pos: bottom-justify;flip: x"
@@ -873,13 +507,8 @@
                                 </div>
                             </div>
                             <a
-                                class="uk-navbar-item uk-link-muted uk-visible@m tm-navbar-button"
-                                href="compare.html"
-                                ><span uk-icon="copy"></span
-                                ><span class="uk-badge">3</span></a
-                            ><a
                                 class="uk-navbar-item uk-link-muted tm-navbar-button"
-                                href="account.html"
+                                href="personal.html"
                                 uk-icon="user"
                             ></a>
                             <div
@@ -889,23 +518,23 @@
                             >
                                 <ul class="uk-nav uk-dropdown-nav">
                                     <li>
-                                        <a href="account.html"
-                                            >Orders <span>(2)</span></a
+                                        <a href="#"
+                                            >Đơn hàng  <span class="uk-badge">2</span></a
                                         >
                                     </li>
                                     <li>
-                                        <a href="favorites.html"
-                                            >Favorites <span>(3)</span></a
+                                        <a href="#"
+                                            >Yêu thích <span class="uk-badge">2</span></a
                                         >
                                     </li>
                                     <li>
-                                        <a href="personal.html">Personal</a>
+                                        <a href="personal.html">Thông tin</a>
                                     </li>
                                     <li>
-                                        <a href="settings.html">Settings</a>
+                                        <a href="#">Thông báo <span class="uk-badge">2</span></a>
                                     </li>
                                     <li class="uk-nav-divider"></li>
-                                    <li><a href="#">Log out</a></li>
+                                    <li><a href="login.html">Đăng xuất</a></li>
                                 </ul>
                             </div>
                             <a
@@ -913,14 +542,16 @@
                                 href="cart.html"
                                 uk-toggle="target: #cart-offcanvas"
                                 onclick="return false"
-                                ><span uk-icon="cart"></span
-                                ><span class="uk-badge">2</span></a
-                            >
+                                >
+                                <span uk-icon="cart"></span>
+                                <span class="uk-badge">2</span>
+                                </a>
                         </div>
                     </div>
                 </div>
             </header>
-            <main>
+            <main class = "uk-container">
+                
                 <section class="uk-section uk-section-small">
                     <div class="uk-container">
                         <div class="uk-grid-medium" uk-grid>
@@ -928,7 +559,7 @@
                                 class="uk-width-1-1 uk-width-1-4@m tm-aside-column"
                             >
                                 <div
-                                    class="uk-card uk-card-default uk-card-small tm-ignore-container"
+                                    class="uk-card uk-card-default uk-cainard-small tm-ignore-container"
                                     uk-sticky="offset: 90; bottom: true; media: @m;"
                                 >
                                     <div class="uk-card-header">
@@ -941,8 +572,7 @@
                                                     class="uk-width-1-3 uk-width-1-4@s uk-width-1-2@m uk-margin-auto uk-visible-toggle uk-position-relative uk-border-circle uk-overflow-hidden uk-light"
                                                 >
                                                     <img
-                                                        class="uk-width-1-1"
-                                                        src="images/avatar.jpg"
+                                                    src="https://a.storyblok.com/f/177537/900x600/10a6b3612e/45.png/m/1080x0" width="400" height="600" alt=""
                                                     /><a
                                                         class="uk-link-reset uk-overlay-primary uk-position-cover uk-hidden-hover"
                                                         href="#"
@@ -979,7 +609,7 @@
                                                                 uk-icon="icon: cog; ratio: .75;"
                                                             ></span
                                                             ><span
-                                                                >Settings</span
+                                                                >Cài đặt</span
                                                             ></a
                                                         >
                                                     </div>
@@ -1005,19 +635,19 @@
                                             >
                                                 <li>
                                                     <a href="account.html"
-                                                        >Orders
+                                                        >Đơn hàng
                                                         <span>(2)</span></a
                                                     >
                                                 </li>
                                                 <li class="uk-active">
                                                     <a href="favorites.html"
-                                                        >Favorites
+                                                        >sản phẩm yêu thích
                                                         <span>(3)</span></a
                                                     >
                                                 </li>
                                                 <li>
                                                     <a href="personal.html"
-                                                        >Personal Info</a
+                                                        >Thông tin cá nhân</a
                                                     >
                                                 </li>
                                             </ul>
@@ -1030,7 +660,7 @@
                                     class="uk-card uk-card-default uk-card-small tm-ignore-container"
                                 >
                                     <header class="uk-card-header">
-                                        <h1 class="uk-h2">Favorites</h1>
+                                        <h1 class="uk-h2">sản phẩm yêu thích</h1>
                                     </header>
                                     <div
                                         class="uk-grid-collapse tm-products-list"
@@ -1042,26 +672,24 @@
                                                     class="tm-ratio tm-ratio-4-3"
                                                 >
                                                     <a
-                                                        class="tm-media-box"
-                                                        href="product.html"
+                                                    src="https://a.storyblok.com/f/177537/900x600/62c6deaeca/product-edit-3-2-900x600-2.png/m/1080x0" width="400" height="600" alt=""
+                                                                        alt="Apple"
                                                         ><div
                                                             class="tm-product-card-labels"
                                                         >
                                                             <span
                                                                 class="uk-label uk-label-warning"
-                                                                >top
-                                                                selling</span
+                                                                >Bán chạy nhất</span
                                                             ><span
                                                                 class="uk-label uk-label-danger"
-                                                                >trade-in</span
+                                                                >Mua bán</span
                                                             >
                                                         </div>
                                                         <figure
                                                             class="tm-media-box-wrap"
                                                         >
                                                             <img
-                                                                src="images/products/1/1-medium.jpg"
-                                                                alt='Apple MacBook Pro 15" Touch Bar MPTU2LL/A 256GB (Silver)'
+                                                            src="https://a.storyblok.com/f/177537/900x600/ea9896a1cc/46.png/m/1080x0" width="400" height="600" alt=""
                                                             /></figure
                                                     ></a>
                                                 </div>
@@ -1073,7 +701,7 @@
                                                     <div
                                                         class="uk-text-meta uk-margin-xsmall-bottom"
                                                     >
-                                                        Laptop
+                                                        Áo khoác jean
                                                     </div>
                                                     <h3
                                                         class="tm-product-card-title"
@@ -1081,10 +709,9 @@
                                                         <a
                                                             class="uk-link-heading"
                                                             href="product.html"
-                                                            >Apple MacBook Pro
-                                                            15&quot; Touch Bar
-                                                            MPTU2LL/A 256GB
-                                                            (Silver)</a
+                                                            >Áo khoác jean thời thượng mùa hè
+                                                            (màu xanh)                                             
+                                                        </a
                                                         >
                                                     </h3>
                                                     <ul
@@ -1093,36 +720,17 @@
                                                         <li>
                                                             <span
                                                                 class="uk-text-muted"
-                                                                >Diagonal
-                                                                display: </span
-                                                            ><span>15.4"</span>
+                                                                >Chất lượng </span
+                                                            ><span>Da </span>
                                                         </li>
                                                         <li>
                                                             <span
                                                                 class="uk-text-muted"
-                                                                >CPU: </span
+                                                                >Màu: </span
                                                             ><span
-                                                                >Intel®&nbsp;Core™
-                                                                i7</span
+                                                                >Xanh/Đen/Trắng</span
                                                             >
-                                                        </li>
-                                                        <li>
-                                                            <span
-                                                                class="uk-text-muted"
-                                                                >RAM: </span
-                                                            ><span
-                                                                >16&nbsp;GB</span
-                                                            >
-                                                        </li>
-                                                        <li>
-                                                            <span
-                                                                class="uk-text-muted"
-                                                                >Video Card: </span
-                                                            ><span
-                                                                >AMD Radeon Pro
-                                                                555</span
-                                                            >
-                                                        </li>
+                                                        </li>                                                       
                                                     </ul>
                                                 </div>
                                                 <div
@@ -1133,12 +741,12 @@
                                                     >
                                                         <del
                                                             class="uk-text-meta"
-                                                            >$1899.00</del
+                                                            >500.000VNĐ</del
                                                         >
                                                         <div
                                                             class="tm-product-card-price"
                                                         >
-                                                            $1599.00
+                                                            250.000VNĐ
                                                         </div>
                                                     </div>
                                                     <div
@@ -1155,8 +763,7 @@
                                                                 ></span
                                                                 ><span
                                                                     class="tm-product-card-action-text"
-                                                                    >Add to
-                                                                    favorites</span
+                                                                    >Thêm vào sản phẩm yêu thích</span
                                                                 ></a
                                                             ><a
                                                                 class="tm-product-card-action js-add-to js-add-to-compare tm-action-button-active js-added-to"
@@ -1166,8 +773,7 @@
                                                                 ></span
                                                                 ><span
                                                                     class="tm-product-card-action-text"
-                                                                    >Add to
-                                                                    compare</span
+                                                                    >Thêm vào so sánh</span
                                                                 ></a
                                                             >
                                                         </div>
@@ -1180,8 +786,7 @@
                                                             ></span
                                                             ><span
                                                                 class="tm-product-card-add-button-text"
-                                                                >add to
-                                                                cart</span
+                                                                >Thêm vào giỏ hàng</span
                                                             >
                                                         </button>
                                                     </div>
@@ -1201,18 +806,17 @@
                                                         >
                                                             <span
                                                                 class="uk-label uk-label-success"
-                                                                >new</span
+                                                                >Mới</span
                                                             ><span
                                                                 class="uk-label uk-label-danger"
-                                                                >trade-in</span
+                                                                >Mua bán</span
                                                             >
                                                         </div>
                                                         <figure
                                                             class="tm-media-box-wrap"
                                                         >
                                                             <img
-                                                                src="images/products/2/2-medium.jpg"
-                                                                alt='Apple MacBook 12" MNYN2LL/A 512GB (Rose Gold)'
+                                                            src="https://a.storyblok.com/f/177537/900x600/62c6deaeca/product-edit-3-2-900x600-2.png/m/1080x0" width="400" height="600" alt=""
                                                             /></figure
                                                     ></a>
                                                 </div>
@@ -1224,7 +828,7 @@
                                                     <div
                                                         class="uk-text-meta uk-margin-xsmall-bottom"
                                                     >
-                                                        Laptop
+                                                        Áo sơ mi
                                                     </div>
                                                     <h3
                                                         class="tm-product-card-title"
@@ -1232,9 +836,8 @@
                                                         <a
                                                             class="uk-link-heading"
                                                             href="product.html"
-                                                            >Apple MacBook
-                                                            12&quot; MNYN2LL/A
-                                                            512GB (Rose Gold)</a
+                                                            >Áo sơ mi thời thượng mùa hè 
+                                                            (Rose Gold)</a
                                                         >
                                                     </h3>
                                                     <ul
@@ -1243,35 +846,23 @@
                                                         <li>
                                                             <span
                                                                 class="uk-text-muted"
-                                                                >Diagonal
-                                                                display: </span
-                                                            ><span>12"</span>
+                                                                >Thành phần: </span
+                                                            ><span>Bông 100%</span>
                                                         </li>
                                                         <li>
                                                             <span
                                                                 class="uk-text-muted"
-                                                                >CPU: </span
+                                                                >Chất lượng: </span
                                                             ><span
-                                                                >Intel®&nbsp;Core™
-                                                                i5</span
+                                                                >Cotton</span
                                                             >
                                                         </li>
                                                         <li>
                                                             <span
                                                                 class="uk-text-muted"
-                                                                >RAM: </span
+                                                                >Mô tả: </span
                                                             ><span
-                                                                >8&nbsp;GB</span
-                                                            >
-                                                        </li>
-                                                        <li>
-                                                            <span
-                                                                class="uk-text-muted"
-                                                                >Video Card: </span
-                                                            ><span
-                                                                >Intel® HD
-                                                                Graphics
-                                                                615</span
+                                                                >Áo sơ mi dáng vừa vải cotton Oxford có cổ áo cài khuy, nẹp khuy kiểu truyền thống, cầu vai phía sau và một túi ngực mở. Tay dài với măng sét cài khuy và nẹp tay áo có khuy nối. Vạt hơi tròn.</span
                                                             >
                                                         </li>
                                                     </ul>
@@ -1285,7 +876,7 @@
                                                         <div
                                                             class="tm-product-card-price"
                                                         >
-                                                            $1549.00
+                                                            250.000VNĐ
                                                         </div>
                                                     </div>
                                                     <div
@@ -1302,8 +893,7 @@
                                                                 ></span
                                                                 ><span
                                                                     class="tm-product-card-action-text"
-                                                                    >Add to
-                                                                    favorites</span
+                                                                    >Thêm vào sản phẩm yêu thích</span
                                                                 ></a
                                                             ><a
                                                                 class="tm-product-card-action js-add-to js-add-to-compare tm-action-button-active js-added-to"
@@ -1313,8 +903,7 @@
                                                                 ></span
                                                                 ><span
                                                                     class="tm-product-card-action-text"
-                                                                    >Add to
-                                                                    compare</span
+                                                                    >Thêm vào so sánh</span
                                                                 ></a
                                                             >
                                                         </div>
@@ -1327,8 +916,7 @@
                                                             ></span
                                                             ><span
                                                                 class="tm-product-card-add-button-text"
-                                                                >add to
-                                                                cart</span
+                                                                >Thêm vào giỏ hàng</span
                                                             >
                                                         </button>
                                                     </div>
@@ -1347,8 +935,7 @@
                                                             class="tm-media-box-wrap"
                                                         >
                                                             <img
-                                                                src="images/products/3/3-medium.jpg"
-                                                                alt="Lenovo IdeaPad YOGA 920-13IKB 80Y7001RRK (Copper)"
+                                                            src="https://a.storyblok.com/f/177537/900x600/10a6b3612e/45.png/m/1080x0" width="400" height="600" alt=""
                                                             /></figure
                                                     ></a>
                                                 </div>
@@ -1360,7 +947,7 @@
                                                     <div
                                                         class="uk-text-meta uk-margin-xsmall-bottom"
                                                     >
-                                                        Laptop
+                                                        áo sơ mi
                                                     </div>
                                                     <h3
                                                         class="tm-product-card-title"
@@ -1368,9 +955,7 @@
                                                         <a
                                                             class="uk-link-heading"
                                                             href="product.html"
-                                                            >Lenovo IdeaPad YOGA
-                                                            920-13IKB 80Y7001RRK
-                                                            (Copper)</a
+                                                            >Áo sơ mi hoa thời trang </a
                                                         >
                                                     </h3>
                                                     <ul
@@ -1379,17 +964,15 @@
                                                         <li>
                                                             <span
                                                                 class="uk-text-muted"
-                                                                >Diagonal
-                                                                display: </span
-                                                            ><span>13.9"</span>
+                                                                >Thành phần: </span
+                                                            ><span>Sợi vít-cô 100%</span>
                                                         </li>
                                                         <li>
                                                             <span
                                                                 class="uk-text-muted"
-                                                                >CPU: </span
+                                                                >Mô tả: </span
                                                             ><span
-                                                                >Intel®&nbsp;Core™
-                                                                i7 8550U</span
+                                                                >Áo sơ mi ngắn tay bằng viscose rủ mềm in hoa văn. Dáng thoải mái với cổ hai ve, nẹp khuy liền và cầu vai phía sau. Túi ngực mở và vạt ngang, xẻ hai bên.</span
                                                             >
                                                         </li>
                                                         <li>
@@ -1403,11 +986,15 @@
                                                         <li>
                                                             <span
                                                                 class="uk-text-muted"
-                                                                >Video Card: </span
+                                                                >Mô tả: </span
                                                             ><span
-                                                                >Intel® HD
-                                                                Graphics
-                                                                620</span
+                                                                >Kích cỡ: Vai: Rộng: 55.5 cm (Kích cỡ L/L), Mặt trước: Chiều dài: 77.0 cm (Kích cỡ L/L), Tay áo: Chiều dài: 27.5 cm (Kích cỡ L/L)
+                                                                Chiều cao: Chiều dài bình thường
+                                                                Chiều dài tay áo: Tay áo ngắn
+                                                                Độ vừa vặn: Thoải mái
+                                                                Cổ áo: Cổ resort
+                                                                Phong cách: Đường xẻ
+                                                                Mô tả: Màu xanh dương nhạt/Vàng/Hồng/Tím/Xanh lá, Mẫu họa tiết, SpongeBob SquarePants, Patrick Star, Gary, SpongeBob SquarePants</span
                                                             >
                                                         </li>
                                                     </ul>
@@ -1421,7 +1008,7 @@
                                                         <div
                                                             class="tm-product-card-price"
                                                         >
-                                                            $1199.00
+                                                            200.000VNĐ
                                                         </div>
                                                     </div>
                                                     <div
@@ -1438,8 +1025,7 @@
                                                                 ></span
                                                                 ><span
                                                                     class="tm-product-card-action-text"
-                                                                    >Add to
-                                                                    favorites</span
+                                                                    >Thêm vào sản phẩm yêu thích</span
                                                                 ></a
                                                             ><a
                                                                 class="tm-product-card-action js-add-to js-add-to-compare"
@@ -1449,8 +1035,7 @@
                                                                 ></span
                                                                 ><span
                                                                     class="tm-product-card-action-text"
-                                                                    >Add to
-                                                                    compare</span
+                                                                    >Thêm vào so sánh</span
                                                                 ></a
                                                             >
                                                         </div>
@@ -1463,8 +1048,7 @@
                                                             ></span
                                                             ><span
                                                                 class="tm-product-card-add-button-text"
-                                                                >add to
-                                                                cart</span
+                                                                >Thêm vào giỏ hàng</span
                                                             >
                                                         </button>
                                                     </div>
@@ -1488,18 +1072,6 @@
                                         class="uk-grid-small uk-flex-center uk-flex-left@s"
                                         uk-grid
                                     >
-                                        <div>
-                                            <span
-                                                uk-icon="icon: star; ratio: 2.5;"
-                                            ></span>
-                                        </div>
-                                        <div
-                                            class="uk-text-center uk-text-left@s uk-width-expand@s"
-                                        >
-                                            <div>Mauris placerat</div>
-                                            <div class="uk-text-meta">
-                                                Donec mollis nibh dolor, sit
-                                                amet auctor
                                             </div>
                                         </div>
                                     </div>
@@ -1510,79 +1082,7 @@
                                         uk-grid
                                     >
                                         <div>
-                                            <span
-                                                uk-icon="icon: receiver; ratio: 2.5;"
-                                            ></span>
-                                        </div>
-                                        <div
-                                            class="uk-text-center uk-text-left@s uk-width-expand@s"
-                                        >
-                                            <div>Lorem ipsum</div>
-                                            <div class="uk-text-meta">
-                                                Sit amet, consectetur adipiscing
-                                                elit
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div
-                                        class="uk-grid-small uk-flex-center uk-flex-left@s"
-                                        uk-grid
-                                    >
-                                        <div>
-                                            <span
-                                                uk-icon="icon: location; ratio: 2.5;"
-                                            ></span>
-                                        </div>
-                                        <div
-                                            class="uk-text-center uk-text-left@s uk-width-expand@s"
-                                        >
-                                            <div>Proin pharetra</div>
-                                            <div class="uk-text-meta">
-                                                Nec quam a fermentum ut viverra
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div
-                                        class="uk-grid-small uk-flex-center uk-flex-left@s"
-                                        uk-grid
-                                    >
-                                        <div>
-                                            <span
-                                                uk-icon="icon: comments; ratio: 2.5;"
-                                            ></span>
-                                        </div>
-                                        <div
-                                            class="uk-text-center uk-text-left@s uk-width-expand@s"
-                                        >
-                                            <div>Praesent ultrices</div>
-                                            <div class="uk-text-meta">
-                                                Praesent ultrices, orci nec
-                                                finibus
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div
-                                        class="uk-grid-small uk-flex-center uk-flex-left@s"
-                                        uk-grid
-                                    >
-                                        <div>
-                                            <span
-                                                uk-icon="icon: happy; ratio: 2.5;"
-                                            ></span>
-                                        </div>
-                                        <div
-                                            class="uk-text-center uk-text-left@s uk-width-expand@s"
-                                        >
-                                            <div>Duis condimentum</div>
-                                            <div class="uk-text-meta">
-                                                Pellentesque eget varius arcu
-                                            </div>
+
                                         </div>
                                     </div>
                                 </li>
@@ -1594,241 +1094,188 @@
                     </div>
                 </section>
             </main>
-            <footer>
-                <section
-                    class="uk-section uk-section-secondary uk-section-small uk-light"
-                >
-                    <div class="uk-container">
-                        <div
-                            class="uk-grid-medium uk-child-width-1-1 uk-child-width-1-4@m"
-                            uk-grid
-                        >
-                            <div>
-                                <a class="uk-logo" href="index.html"
-                                    ><img
-                                        src="images/logo-inverse.svg"
-                                        width="90"
-                                        height="32"
-                                        alt="Logo"
-                                /></a>
-                                <p class="uk-text-small">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit. Sed ut mauris eros. Nulla
-                                    quis ante sed tortor efficitur facilisis.
-                                </p>
-                                <ul class="uk-iconnav">
-                                    <li>
-                                        <a
-                                            href="#"
-                                            title="Facebook"
-                                            uk-icon="facebook"
-                                        ></a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            title="Twitter"
-                                            uk-icon="twitter"
-                                        ></a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            title="YouTube"
-                                            uk-icon="youtube"
-                                        ></a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="#"
-                                            title="Instagram"
-                                            uk-icon="instagram"
-                                        ></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <nav
-                                    class="uk-grid-small uk-child-width-1-2"
-                                    uk-grid
-                                >
-                                    <div>
-                                        <ul class="uk-nav uk-nav-default">
-                                            <li>
-                                                <a href="catalog.html"
-                                                    >Catalog</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a href="brands.html">Brands</a>
-                                            </li>
-                                            <li>
-                                                <a href="delivery.html"
-                                                    >Delivery</a
-                                                >
-                                            </li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="#">Payment</a></li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <ul class="uk-nav uk-nav-default">
-                                            <li>
-                                                <a href="about.html">About</a>
-                                            </li>
-                                            <li>
-                                                <a href="contacts.html"
-                                                    >Contacts</a
-                                                >
-                                            </li>
-                                            <li>
-                                                <a href="blog.html">Blog</a>
-                                            </li>
-                                            <li>
-                                                <a href="news.html">News</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                            <div>
-                                <ul class="uk-list uk-text-small">
-                                    <li>
-                                        <a class="uk-link-muted" href="#"
-                                            ><span
-                                                class="uk-margin-small-right"
-                                                uk-icon="receiver"
-                                            ></span
-                                            ><span class="tm-pseudo"
-                                                >8 800 799 99 99</span
-                                            ></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <a class="uk-link-muted" href="#"
-                                            ><span
-                                                class="uk-margin-small-right"
-                                                uk-icon="mail"
-                                            ></span
-                                            ><span class="tm-pseudo"
-                                                >example@example.com</span
-                                            ></a
-                                        >
-                                    </li>
-                                    <li>
-                                        <div class="uk-text-muted">
-                                            <span
-                                                class="uk-margin-small-right"
-                                                uk-icon="location"
-                                            ></span
-                                            ><span
-                                                >St.&nbsp;Petersburg,
-                                                Nevsky&nbsp;Prospect&nbsp;28</span
-                                            >
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="uk-text-muted">
-                                            <span
-                                                class="uk-margin-small-right"
-                                                uk-icon="clock"
-                                            ></span
-                                            ><span>Daily 10:00–22:00</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <form class="uk-form-stacked">
-                                    <label
-                                        ><div
-                                            class="uk-form-label uk-text-muted"
-                                        >
-                                            Subscribe for updates
-                                        </div>
-                                        <div class="uk-inline uk-width-1-1">
-                                            <a
-                                                class="uk-form-icon uk-form-icon-flip"
-                                                href="#"
-                                                uk-icon="mail"
-                                            ></a
-                                            ><input
-                                                class="uk-input"
-                                                type="email"
-                                                placeholder="Your email"
-                                                required
-                                            /></div
-                                    ></label>
-                                </form>
-                                <div
-                                    class="uk-margin uk-text-small uk-text-muted"
-                                >
-                                    Shopping Categories icons by Jaro Sigrist
-                                    from Noun Project
-                                </div>
-                            </div>
+
+
+                        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-white text-muted">
+            <!-- Section: Social media -->
+            <section
+                class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+            >
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100083387297943"
+                        class="me-4 link-secondary"
+                    >
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 link-secondary">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a
+                        href="https://github.com/vule2303"
+                        class="me-4 link-secondary"
+                    >
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3 text-secondary"></i
+                                >devYersin
+                            </h6>
+                            <p>
+                                Yersin dev fesher, học việc, dev khởi nghiệp,
+                                vui là chính nhưng thu nhập bằng zero.
+                            </p>
                         </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                SẢN PHẨM
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">ÁO</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">QUẦN</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">TÚI SÁCH</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">GIÀY DÉP</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Mạng xã hội
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">FACEBOOK</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">INSTAGRAM</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">TWITTER</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div
+                            class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4"
+                        >
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                            <p>
+                                <i class="fas fa-home me-3 text-secondary"></i>
+                                80 Mai Anh Đào, P8, Đà Lạt
+                            </p>
+                            <p>
+                                <i
+                                    class="fas fa-envelope me-3 text-secondary"
+                                ></i>
+                                yersinuniversity.edu.vn
+                            </p>
+                            <p>
+                                <i class="fas fa-phone me-3 text-secondary"></i>
+                                +84559404304
+                            </p>
+                        </div>
+                        <!-- Grid column -->
                     </div>
-                </section>
-            </footer>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div
+                class="text-center p-4"
+                style="background-color: rgba(0, 0, 0, 0.025)"
+            >
+                © 2023 devYersin
+            </div>
+            <!-- Copyright -->
+
+            <!-- Footer -->
+        </footer>
+        
             <div id="nav-offcanvas" uk-offcanvas="overlay: true">
                 <aside class="uk-offcanvas-bar uk-padding-remove">
                     <div
                         class="uk-card uk-card-default uk-card-small tm-shadow-remove"
                     >
-                        <header class="uk-card-header uk-flex uk-flex-middle">
-                            <div>
-                                <a class="uk-link-muted uk-text-bold" href="#"
-                                    >8 800 799 99 99</a
-                                >
-                                <div
-                                    class="uk-text-xsmall uk-text-muted"
-                                    style="margin-top: -2px"
-                                >
-                                    <div>
-                                        St.&nbsp;Petersburg,
-                                        Nevsky&nbsp;Prospect&nbsp;28
-                                    </div>
-                                    <div>Daily 10:00–22:00</div>
-                                </div>
-                            </div>
-                        </header>
+                        
                         <nav class="uk-card-small uk-card-body">
                             <ul
                                 class="uk-nav-default uk-nav-parent-icon uk-list-divider"
                                 uk-nav
                             >
                                 <li class="uk-parent">
-                                    <a href="catalog.html">Catalog</a>
+                                    <a href="catalog.html">Sản phẩm</a>
                                     <ul class="uk-nav-sub uk-list-divider">
                                         <li>
                                             <a href="subcategory.html"
-                                                >Laptops &amp; Tablets</a
+                                                >Áo</a
                                             >
                                         </li>
                                         <li>
                                             <a href="subcategory.html"
-                                                >Phones &amp; Gadgets</a
+                                                >Quần</a
                                             >
                                         </li>
                                         <li>
                                             <a href="subcategory.html"
-                                                >TV &amp; Video</a
+                                                >Giày & Dép</a
                                             >
                                         </li>
                                         <li>
                                             <a href="subcategory.html"
-                                                >Games &amp; Entertainment</a
+                                                >Túi & Phụ Kiện</a
                                             >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html">Photo</a>
                                         </li>
                                         <li class="uk-text-center">
                                             <a
                                                 class="uk-link-muted uk-text-uppercase tm-link-to-all"
                                                 href="catalog.html"
-                                                ><span>see all categories</span
+                                                ><span>Xem Thêm</span
                                                 ><span
                                                     uk-icon="icon: chevron-right; ratio: .75;"
                                                 ></span
@@ -1837,55 +1284,55 @@
                                     </ul>
                                 </li>
                                 <li class="uk-parent">
-                                    <a href="brands.html">Brands</a>
+                                    <a href="brands.html">Thương hiệu</a>
                                     <ul class="uk-nav-sub uk-list-divider">
                                         <li>
-                                            <a href="subcategory.html">Apple</a>
+                                            <a href="#">RALPH LAUREN</a>
                                         </li>
                                         <li>
-                                            <a href="subcategory.html"
-                                                >Samsung</a
+                                            <a href="#"
+                                                >NIKE</a
                                             >
                                         </li>
                                         <li>
-                                            <a href="subcategory.html">Sony</a>
+                                            <a href="#">ADIDAS</a>
                                         </li>
                                         <li>
-                                            <a href="subcategory.html"
-                                                >Microsoft</a
+                                            <a href="#"
+                                                >ZARA</a
                                             >
                                         </li>
                                         <li>
-                                            <a href="subcategory.html">Intel</a>
+                                            <a href="subcategory.html">COS</a>
                                         </li>
                                         <li>
-                                            <a href="subcategory.html">HP</a>
+                                            <a href="subcategory.html">ALLSAINTS</a>
                                         </li>
                                         <li>
-                                            <a href="subcategory.html">LG</a>
+                                            <a href="subcategory.html">UNIQLO</a>
                                         </li>
                                         <li>
                                             <a href="subcategory.html"
-                                                >Lenovo</a
+                                                >BOSS</a
                                             >
                                         </li>
                                         <li>
-                                            <a href="subcategory.html">ASUS</a>
+                                            <a href="subcategory.html">LEVI'S</a>
                                         </li>
                                         <li>
-                                            <a href="subcategory.html">Acer</a>
+                                            <a href="subcategory.html">TED BAKER</a>
                                         </li>
                                         <li>
-                                            <a href="subcategory.html">Dell</a>
+                                            <a href="subcategory.html">TOMMY HILFIGER</a>
                                         </li>
                                         <li>
-                                            <a href="subcategory.html">Canon</a>
+                                            <a href="subcategory.html">PAUL SMITH</a>
                                         </li>
                                         <li class="uk-text-center">
                                             <a
                                                 class="uk-link-muted uk-text-uppercase tm-link-to-all"
                                                 href="brands.html"
-                                                ><span>see all brands</span
+                                                ><span>xem Thêm</span
                                                 ><span
                                                     uk-icon="icon: chevron-right; ratio: .75;"
                                                 ></span
@@ -1893,124 +1340,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="uk-parent">
-                                    <a href="#">Pages</a>
-                                    <ul class="uk-nav-sub uk-list-divider">
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Catalog</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Category</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Subcategory</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Product</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html">Cart</a>
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Checkout</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Compare</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Brands</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Compare</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Account</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Favorites</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Personal</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Settings</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html">About</a>
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Contacts</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html">Blog</a>
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html">News</a>
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Article</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html">FAQ</a>
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html"
-                                                >Delivery</a
-                                            >
-                                        </li>
-                                        <li>
-                                            <a href="subcategory.html">404</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li>
-                                    <a href="compare.html"
-                                        >Compare<span
-                                            class="uk-badge uk-margin-xsmall-left"
-                                            >3</span
-                                        ></a
-                                    >
-                                </li>
+                                <li><a href="#">Hỗ trợ</a></li>
+                                
                             </ul>
                         </nav>
-                        <nav class="uk-card-small uk-card-body">
-                            <ul class="uk-nav uk-nav-default">
-                                <li><a href="news.html">News</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="#">Payment</a></li>
-                            </ul>
-                        </nav>
+                       
                         <nav class="uk-card-body">
                             <ul class="uk-iconnav uk-flex-center">
                                 <li>
@@ -2054,7 +1388,7 @@
                         <header class="uk-card-header uk-flex uk-flex-middle">
                             <div class="uk-grid-small uk-flex-1" uk-grid>
                                 <div class="uk-width-expand">
-                                    <div class="uk-h3">Cart</div>
+                                    <div class="uk-h3">Giỏ Hàng</div>
                                 </div>
                                 <button
                                     class="uk-offcanvas-close"
@@ -2079,8 +1413,8 @@
                                                             class="tm-media-box-wrap"
                                                         >
                                                             <img
-                                                                src="images/products/1/1-small.jpg"
-                                                                alt='Apple MacBook Pro 15" Touch Bar MPTU2LL/A 256GB (Silver)'
+                                                                src="assets/img/products/SweaterNike.jpg"
+                                                                alt='Nike Sport Swear Jacket'
                                                             /></figure
                                                     ></a>
                                                 </div>
@@ -2089,14 +1423,12 @@
                                                 <div
                                                     class="uk-text-meta uk-text-xsmall"
                                                 >
-                                                    Laptop
+                                                    Áo khoác
                                                 </div>
-                                                <a
+                                                <div
                                                     class="uk-link-heading uk-text-small"
-                                                    href="product.html"
-                                                    >Apple MacBook Pro 15&quot;
-                                                    Touch Bar MPTU2LL/A 256GB
-                                                    (Silver)</a
+                                                    
+                                                    >Áo khoác nam Nike Sport</div
                                                 >
                                                 <div
                                                     class="uk-margin-xsmall uk-grid-small uk-flex-middle"
@@ -2105,13 +1437,9 @@
                                                     <div
                                                         class="uk-text-bolder uk-text-small"
                                                     >
-                                                        $1599.00
+                                                        250.000VNĐ
                                                     </div>
-                                                    <div
-                                                        class="uk-text-meta uk-text-xsmall"
-                                                    >
-                                                        1 × $1599.00
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div>
@@ -2138,8 +1466,8 @@
                                                             class="tm-media-box-wrap"
                                                         >
                                                             <img
-                                                                src="images/products/2/2-small.jpg"
-                                                                alt='Apple MacBook 12" MNYN2LL/A 512GB (Rose Gold)'
+                                                                src="assets/img/products/SweaterNike.jpg"
+                                                                alt='Nike Sport Swear Jacket'
                                                             /></figure
                                                     ></a>
                                                 </div>
@@ -2148,14 +1476,12 @@
                                                 <div
                                                     class="uk-text-meta uk-text-xsmall"
                                                 >
-                                                    Laptop
+                                                    Áo khoác
                                                 </div>
-                                                <a
+                                                <div
                                                     class="uk-link-heading uk-text-small"
-                                                    href="product.html"
-                                                    >Apple MacBook 12&quot;
-                                                    MNYN2LL/A 512GB (Rose
-                                                    Gold)</a
+                                                   
+                                                    >Áo khoác nam Nike Sport</div
                                                 >
                                                 <div
                                                     class="uk-margin-xsmall uk-grid-small uk-flex-middle"
@@ -2164,13 +1490,9 @@
                                                     <div
                                                         class="uk-text-bolder uk-text-small"
                                                     >
-                                                        $1549.00
+                                                        250.000VNĐ
                                                     </div>
-                                                    <div
-                                                        class="uk-text-meta uk-text-xsmall"
-                                                    >
-                                                        1 × $1549.00
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div>
@@ -2190,9 +1512,9 @@
                                 <div
                                     class="uk-width-expand uk-text-muted uk-h4"
                                 >
-                                    Subtotal
+                                    Tổng
                                 </div>
-                                <div class="uk-h4 uk-text-bolder">$3148.00</div>
+                                <div class="uk-h4 uk-text-bolder">500.000VNĐ</div>
                             </div>
                             <div
                                 class="uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-margin-small"
@@ -2202,14 +1524,14 @@
                                     <a
                                         class="uk-button uk-button-default uk-margin-small uk-width-1-1"
                                         href="cart.html"
-                                        >view cart</a
+                                        >Xem Giỏ Hàng</a
                                     >
                                 </div>
                                 <div>
                                     <a
                                         class="uk-button uk-button-primary uk-margin-small uk-width-1-1"
                                         href="checkout.html"
-                                        >checkout</a
+                                        >Thanh Toán</a
                                     >
                                 </div>
                             </div>
@@ -2218,11 +1540,17 @@
                 </aside>
             </div>
         </div>
-        <script src="scripts/script.js"></script>
+
+
+        <!-- SCRIPT -->
+        <script src="assets/scripts/bootstrap.js"></script>
+        <script src="assets/scripts/script.js"></script>
         <script
             src="//maps.googleapis.com/maps/api/js?key=AIzaSyClyjCemJi4m2q78gNeGkhlckpdH1hzTYA&amp;callback=initMap"
             async
             defer
         ></script>
+        <!-- FONT AWESOME -->
+        <script src="https://kit.fontawesome.com/d7608d3ae4.js" crossorigin="anonymous"></script>
     </body>
 </html>
