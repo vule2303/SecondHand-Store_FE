@@ -253,7 +253,7 @@ main {
 } */
 .uk-button-custom {
     background-color:#3da9fc;    /* Màu nền màu vàng */
-    color: white;               /* Màu chữ đen */
+    color: white !important;               /* Màu chữ đen */
     width: 337px;               /* Chiều rộng là 337px */
     height: 48px;               /* Chiều cao là 48px */
     font-size: 16px;            /* Cỡ chữ là 16px (có thể điều chỉnh theo ý muốn) */
